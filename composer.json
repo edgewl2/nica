@@ -113,7 +113,7 @@
         "Allow single scalar value in EntityReferenceRevisions data type plugin": "https://www.drupal.org/files/issues/allow_single_scalar-2667748-2.patch"
       },
       "drupal/facets": {
-        "Create a date query type" : "https://www.drupal.org/files/issues/create_a_date_query_type-2611812-27.patch"
+        "Create a date query type" : "https://www.drupal.org/files/issues/create_a_date_query_type-2611812-45.patch"
       }
     }
   }
