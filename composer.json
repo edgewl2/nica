@@ -14,41 +14,41 @@
   ],
   "require": {
     "composer/installers": "~1",
-    "drupal-composer/drupal-scaffold": "~1",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~8",
-    "drush/drush": "~8",
-    "drupal/console": "~1",
+    "drupal-composer/drupal-scaffold": "~2",
     "drupal/admin_toolbar": "~1",
-    "drupal/config_readonly": "~1",
-    "drupal/migrate_plus": "~3",
-    "drupal/migrate_tools": "~3",
-    "drupal/config_installer": "~8",
-    "drupal/bootstrap": "~3",
-    "drupal/adminimal_theme": "~1",
     "drupal/adminimal_admin_toolbar": "~1",
-    "drupal/pathauto": "~1",
-    "drupal/inline_entity_form": "~1",
+    "drupal/adminimal_theme": "~1",
+    "drupal/bootstrap": "~3",
+    "drupal/config_installer": "~8",
+    "drupal/config_readonly": "~1",
+    "drupal/console": "~1",
     "drupal/content_entity_base": "1.x-dev",
+    "drupal/core": "~8",
     "drupal/csv_serialization": "~1",
     "drupal/ctools": "~3",
+    "drupal/entity": "~1",
     "drupal/entity_reference_revisions": "~1",
     "drupal/facets": "1.x-dev",
     "drupal/flysystem": "~1",
     "drupal/flysystem_dropbox": "~1",
     "drupal/geolocation": "~1",
-    "drupal/entity": "~1",
+    "drupal/inline_entity_form": "~1",
     "drupal/media_entity": "~1",
     "drupal/media_entity_image": "~1",
+    "drupal/migrate_plus": "~3",
     "drupal/migrate_source_csv": "~2",
+    "drupal/migrate_tools": "~3",
+    "drupal/nica_entity": "*",
+    "drupal/nica_migrate": "*",
     "drupal/paragraphs": "~1",
+    "drupal/pathauto": "~1",
     "drupal/search_api": "~1",
     "drupal/search_api_solr": "1.x-dev",
     "drupal/token": "~1",
-    "drupal/views_rest_feed": "~1",
-    "drupal/nica_entity": "*",
-    "drupal/nica_migrate": "*",
     "drupal/twig_tweak": "~1",
+    "drupal/views_rest_feed": "~1",
+    "drush/drush": "~8",
     "geerlingguy/drupal-vm": "dev-master"
   },
   "require-dev": {
@@ -73,6 +73,11 @@
     "classmap": [
       "scripts/composer/ScriptHandler.php"
     ]
+  },
+  "config" : {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
   },
   "scripts": {
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
@@ -108,7 +113,7 @@
         "Allow single scalar value in EntityReferenceRevisions data type plugin": "https://www.drupal.org/files/issues/allow_single_scalar-2667748-2.patch"
       },
       "drupal/facets": {
-        "Create a date query type" : "https://www.drupal.org/files/issues/create_a_date_query_type-2611812-27.patch"
+        "Create a date query type" : "https://www.drupal.org/files/issues/create_a_date_query_type-2611812-45.patch"
       }
     }
   }
